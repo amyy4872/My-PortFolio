@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">PORTFOLIO</div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#dsa">DSA Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home">
+    <div class="hero">
+      <div>
+        <p class="highlight">Hello I’m</p>
+        <h1 id="typed-name"></h1>
+        <h2>Full Stack Developer</h2>
+        <p>Passionate about building delightful, high-performance web apps that bridge design and functionality.</p>
+        <div class="hero-buttons">
+          <a href="/CV.pdf" class="cv-button">⬇ Download CV</a>
+          <a href="#contact" class="cv-button">✉ Get In Touch</a>
+        </div>
+      </div>
+      <div>
+        <img src="profile.jpeg" alt="Profile" class="profile-img" />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2 class="section-title">My Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Responsive, high-performance websites using modern stacks.</p>
+        <div class="chips"><span class="chip">React</span><span class="chip">Next.js</span></div>
+      </div>
+      <div class="card">
+        <h3>Full Stack Development</h3>
+        <p>From database design to frontend delivery with robust APIs.</p>
+        <div class="chips"><span class="chip">Node.js</span><span class="chip">MongoDB</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <h2 class="section-title">My Resume</h2>
+    <div class="resume">
+      <div class="resume-box">
+        <h3>Experience</h3>
+        <p class="highlight">Full Stack Developer</p>
+        <small>EUPHORIA GENX • Mar 2024 – OCT 2024</small>
+        <ul>
+          <li>Built responsive apps with React and Node.</li>
+          <li>Implemented RESTful APIs and integrations.</li>
+        </ul>
+      </div>
+      <div class="resume-box">
+        <h3>Skills</h3>
+        <p>JavaScript, React, Node.js, BootStrap, Docker, AWS</p>
+      </div>
+    </div>
+  </section>
+
+<!-- DSA-->
+    <section id="dsa">
+    <h2 class="section-title">DSA Skills</h2>
+    <div class="resume">
+      <div class="resume-box">
+        <h3>SKILLS</h3>
+        <p class="highlight">SOLVED 700+ DSA QUESTIONS</p>
+        <small>LEETCODE & GFG • Mar 2023 – Present</small>
+        <ul>
+          <li>Graphs , Dynamic Programming , Matrix , Strings</li>
+        </ul>
+      </div>
+      <div class="resume-box">
+        <h3>Contest Rating</h3>
+        <p>LeetCode - 1777</p>
+        <p>GfG - 1703</p>
+      </div>
+    </div>
+  </section>
+  <!-- Projects -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+
+    <!-- Project 1 -->
+    <a href="https://github.com/amyy4872/TITANIC-SURVIVAL-PREDICTION-" target="_blank">
+      <div class="project">
+        <img src="pic1.jpeg" alt="Project"/>
+        <div class="content">
+          <p class="highlight">Group Project • 2024</p>
+          <h3>TITANIC SURVIVAL</h3>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 2 -->
+    <a href="https://your-project-link.com" target="_blank">
+      <div class="project">
+        <img src="pic2.jpeg" alt="Project"/>
+        <div class="content">
+          <p class="highlight">Group Project • 2024</p>
+          <h3>DATA VISUALIZER</h3>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+    <a href="https://your-project-link.com" target="_blank">
+      <div class="project">
+        <img src="pic4.jpeg" alt="Project"/>
+        <div class="content">
+          <p class="highlight">Individual Project • 2025</p>
+          <h3>MY PORTFOLIO</h3>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 4 -->
+    <a href="https://github.com/amyy4872/SNAKE-" target="_blank">
+      <div class="project">
+        <img src="pic3.jpeg" alt="Project"/>
+        <div class="content">
+          <p class="highlight">Individual Project • 2023</p>
+          <h3>SNAKE GAME</h3>
+        </div>
+      </div>
+    </a>
+
+  </div> <!-- ✅ yeh projects container ka closing div -->
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact">
+      <div class="contact-box">
+        <h4>Contact Information</h4>
+        <p>📧 shawamit20037890@gmail.com</p>
+        <p>📞 7890199704</p>
+      </div>
+      <form class="contact-box">
+        <label>First Name *</label>
+        <input type="text"/>
+        <label>Last Name *</label>
+        <input type="text"/>
+        <label>Email *</label>
+        <input type="email"/>
+        <label>Message *</label>
+        <textarea rows="4"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © <span id="year"></span> AMMIT KUMAR SHAW. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
